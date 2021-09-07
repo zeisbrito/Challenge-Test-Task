@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: 20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 15px;
+}
+
+header#headerProduct {
+    display: block;
+    border-bottom: 2px solid #606060;
+    padding-bottom: 0px;
+}
+
+header#headerProduct h1 {
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+section#bodySection h2 {
+    display: block;
+    font-size: 20px;
+
+}
+
+div#addPage {
+    display: block;
+    width: 600px;
+    float: left;
+    border-style: solid;
+    border-width: 0px;
+    padding: 5px;
+    margin: 10px;
+}
+
+div#addPage p {
+    padding: 0px 0px 0px 10px;
+}
+
+footer#footerProduct {
+    clear: both;
+    border-top: 2px solid #606060;
+}
+
+footer#footerProduct p {
+    text-align: center;
+}
