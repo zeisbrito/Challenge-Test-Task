@@ -1,15 +1,15 @@
-<?php include_once "header.php" ?>
+<?php $this->view("header"); ?>
         <div id="interface">
             <header id="headerProduct">
                 <h1>Product Add</h1>
                 <div id="buttons_sc">
-                    <a href="javascript: submitform()" class="btn btn-outline-secondary">SAVE</a>
+                    <a href="#" onclick="submitform()" class="btn btn-outline-secondary">SAVE</a>
                     <a href="<?php echo $this->curPageURL(); ?>?c=Product" class="btn btn-outline-secondary">CANCEL</a>
                 </div>
             </header>
             <section id="bodySection">
                 <div id="addPage">
-                    <form id="product_form" name="product_add" method="POST" action="<?php echo $this->curPageURL(); ?>app/controllers/Sendpdo.php">
+                    <form id="product_form" name="product_add" method="POST" action="<?= $this->curPageURL(); ?>?c=Product&a=save">
                         <div class="form-group row">
                             <div class="col-md-3"><label for="sku">SKU</label></div>
                             <div class="col"><input type="text" name="sku" id="sku" placeholder="Product SKU" required/></div>
@@ -107,4 +107,4 @@
                 <p>Scandiweb Test Assignment</p>
             </footer>
         </div>
-<?php include_once "footer.php" ?>
+<?php $this->view("footer"); ?>

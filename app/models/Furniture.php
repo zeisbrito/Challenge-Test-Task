@@ -38,4 +38,16 @@ class Furniture extends Product
             $this->getLength()
         ]);
     }
+
+    public function getNameOfAttrs() {
+        return [
+            'sku',
+            'name',
+            'price',
+            'type',
+            'height',
+            'width',
+            'length'
+        ];
+    }
 }

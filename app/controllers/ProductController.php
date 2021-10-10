@@ -4,6 +4,7 @@ use App\Dao\ProductDAO;
 
 class ProductController extends Controller
 {
+    // Start for view products method
     public function index()
     {
         $dao = new ProductDAO();
@@ -16,8 +17,23 @@ class ProductController extends Controller
         $this->view("add-product");
     }
 
-    public function list()
+    // Start for add new product method 
+    public function save()
     {
-        $this->view("product-list");
+        $data = (object) $_POST;
+        $dao = new ProductDAO();
+        $dao->save($data);
+
+        header('Location: ' . $this->curPageURL() . '?c=Product');
+    }
+
+    // Start for MASS DELETE method
+    public function delete()
+    {
+        $datadel = $_POST['sku'];
+        $dao = new ProductDAO();
+        $dao->delete($datadel);
+
+        header('Location: ' . $this->curPageURL() . '?c=Product');
     }
 }

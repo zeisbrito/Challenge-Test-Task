@@ -41,7 +41,7 @@ div#buttons_sc {
     width: 180px;
     position: relative;
     top: -5px;
-    left: 650px;
+    left: 690px;
 }
 
 div#buttons_sc input {
@@ -109,8 +109,3 @@ footer#footerProduct {
 footer#footerProduct p {
     text-align: center;
 }
-
-/* .hide
-{
-    display: none;
-} */

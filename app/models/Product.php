@@ -17,6 +17,10 @@ abstract class Product
         $this->type = $product->type;
     }
 
+    public function getId() {
+        return $this->id;
+    }
+
     public function getSku() {
         return $this->sku;
     }

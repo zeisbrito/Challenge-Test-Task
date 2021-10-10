@@ -20,4 +20,14 @@ class Book extends Product
     {
         return "Weight: " . $this->getWeight() . " KG";
     }
+
+    public function getNameOfAttrs() {
+        return [
+            'sku',
+            'name',
+            'price',
+            'type',
+            'weight'
+        ];
+    }
 }

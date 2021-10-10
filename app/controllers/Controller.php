@@ -26,5 +26,8 @@ class Controller
         $pageURL = strtok($pageURL, '?');
         return $pageURL;
     }
-}
 
+    public function redirect($page) {
+        header('Location: ' . $this->curPageURL() . $page);
+    }
+}

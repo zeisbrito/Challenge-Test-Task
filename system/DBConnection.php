@@ -22,7 +22,7 @@ class DBConnection {
                 $this->conn = new \PDO("mysql:host=".$this->host.";dbname=".$this->dbname, $this->username, $this->password);
             }
         } catch (\PDOException $pe) {
-            //throw $th;
+            
         }
     }
 }

@@ -10,13 +10,11 @@
             function submitform()
                 {
                     document.product_add.submit();
-                    setTimeout("window.location.href = '<?php echo $this->curPageURL(); ?>?c=Product';", 0);
                 }
             
             function massdeleteform()
                 {
                     document.product_del.submit();
-                    setTimeout("window.location.href = '<?php echo $this->curPageURL(); ?>?c=Product';", 0);
                 }
 
             function productSelect()

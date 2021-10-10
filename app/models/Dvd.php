@@ -20,4 +20,14 @@ class Dvd extends Product
     {
         return "Size: " . $this->getSize() . " MB";
     }
+
+    public function getNameOfAttrs() {
+        return [
+            'sku',
+            'name',
+            'price',
+            'type',
+            'size'
+        ];
+    }
 }
