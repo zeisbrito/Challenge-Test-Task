@@ -45,7 +45,7 @@ class ProductDAO extends DBConnection {
         $result = $this->conn->prepare($sql);
 
         foreach($product->getNameOfAttrs() as $attr) {
-            $result->bindParam(':'.$attr, $product->{'get'.ucfirst($attr)}());
+            $result->bindValue(':'.$attr, $product->{'get'.ucfirst($attr)}());
         }
         $result->execute();
         return;
