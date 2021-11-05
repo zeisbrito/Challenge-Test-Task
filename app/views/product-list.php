@@ -21,7 +21,7 @@
                                             <input type="checkbox" class="delete-checkbox" name="sku[]" value="<?= $product->getSku(); ?>"></div>
                                         <?= $product->getSku(); ?>
                                         </br><?= $product->getName(); ?>
-                                        </br><?= $product->getPrice(); ?>
+                                        </br><?= $product->getPrice()." $"; ?>
                                         </br><?= $product->getInfos(); ?>
                                     </spam>
                                 </li>
