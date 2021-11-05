@@ -2,7 +2,7 @@
     "name": "moises/scandiweb",
     "description": "This application is to insert some products in database",    
     "require": {
-        "php": "^8.0"
+        "php": "^7.4|^8.0"
     },
     "autoload": {
         "psr-4": {
